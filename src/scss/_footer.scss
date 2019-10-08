@@ -73,6 +73,15 @@
       line-height: 18px;
       padding: 11px 20px;
       margin: 0 -15px;
+      position: relative;
+
+      &:before {
+        content: "\f0da";
+        font-family: FontAwesome;
+        font-size: 10px;
+        position: absolute;
+        right: 20px;
+      }
 
       @media (min-width: $screen-sm) {
         cursor: default;
@@ -80,12 +89,15 @@
         border-bottom: none;
         font-size: 13px;
         padding: 0;
+
+        &:before {
+          content: "";
+        }
       }
     }
 
     ul {
-      transition: max-height 1s;
-      transition: margin 1s;
+      transition: all 0.5s ease-out;
       max-height: 0px;
       overflow: hidden;
       margin-left: 10px;
@@ -103,10 +115,15 @@
 
     &.uncollapsed {
       ul {
-        transition: max-height 1s;
+        transition: all 0.5s ease-in;
         max-height: 500px;
         margin-top: 10px;
         margin-bottom: 10px;
+      }
+      h3 {
+        &:before {
+          content: "\f0d7";
+        }
       }
     }
   }
