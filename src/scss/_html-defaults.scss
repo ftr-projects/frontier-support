@@ -1,0 +1,27 @@
+a {
+  text-decoration: underline;
+}
+
+hr {
+  border-top: 2px solid $gray-line;
+}
+
+iframe {
+  border: none;
+}
+
+strong, .bold {
+  font-weight: normal;
+  font-family: $nexa-bold;
+}
+
+
+q {
+  quotes: '\201c' '\201d';
+  &:before {
+    content: open-quote;
+  }
+  &:after {
+    content: close-quote;
+  }
+}

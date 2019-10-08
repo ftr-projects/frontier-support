@@ -1,0 +1,101 @@
+.location {
+  & > a {
+    font-size: 0 !important;
+    padding: 6px 10px 6px 25px !important;
+
+    &:before {
+      content: "\f041";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px ;
+      position: absolute;
+      left: 8px;
+
+      @media (min-width: $screen-sm) {
+        font-size: 15px;
+      }
+    }
+
+    .caret {
+      display: none;
+    }
+
+    @media (min-width: $screen-sm) {
+      font-size: 11px !important;
+      .caret {
+        display: inline-block;
+      }
+    }
+
+  }
+
+  .dropdown-menu {
+    padding: 20px;
+    max-width: 80vh;
+    //min-width: 420px;
+    position: absolute !important;
+    background-color: $white !important;
+    right: 0 !important;
+    top: 44px;
+    left: auto;
+
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175) !important;
+
+    &:before {
+      content: "";
+    }
+
+
+    @media (min-width: $screen-sm) {
+      padding: 20px 20px 20px 70px;
+      top:auto;
+
+      &:before {
+        content: "\f041";
+        color: $marigold-brand;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        position: absolute;
+        left: 20px;
+        top: 18px;
+      }
+
+    }
+
+
+
+    p {
+      font-size: 18px;
+    }
+
+    label.small {
+      font-style: normal;
+      font-size: 12px;
+      font-weight: normal;
+      color: $text-color;
+    }
+
+    .dropdown-header {
+      padding: 3px 0 !important;
+    }
+
+    .form-control {
+      border-radius: 2px;
+      width: auto;
+      display: inline-block;
+    }
+
+    .btn {
+      margin-left: 10px;
+      padding: 7px 20px;
+
+    }
+
+  }
+
+}

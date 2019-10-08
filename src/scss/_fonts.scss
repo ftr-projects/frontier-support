@@ -1,0 +1,171 @@
+$font-path: './fonts/';
+
+@font-face {
+    font-family: 'nexa';
+      src: url('#{$font-path}nexa.woff2') format('woff2'),
+           url('#{$font-path}nexa.woff') format('woff'),
+           url('#{$font-path}nexa.ttf') format('truetype'),
+           url('#{$font-path}nexa.svg#nexa') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa black';
+      src: url('#{$font-path}nexablack.woff2') format('woff2'),
+           url('#{$font-path}nexablack.woff') format('woff'),
+           url('#{$font-path}nexablack.ttf') format('truetype'),
+           url('#{$font-path}nexablack.svg#nexablack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa bold';
+    src: url('#{$font-path}nexabold.woff2') format('woff2'),
+         url('#{$font-path}nexabold.woff') format('woff'),
+         url('#{$font-path}nexabold.ttf') format('truetype'),
+         url('#{$font-path}nexabold.svg#nexabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa light';
+    src: url('#{$font-path}nexalight.woff2') format('woff2'),
+         url('#{$font-path}nexalight.woff') format('woff'),
+         url('#{$font-path}nexalight.ttf') format('truetype'),
+         url('#{$font-path}nexalight.svg#nexalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa light italic';
+    src: url('#{$font-path}nexalightitalic.woff2') format('woff2'),
+         url('#{$font-path}nexalightitalic.woff') format('woff'),
+         url('#{$font-path}nexalightitalic.ttf') format('truetype'),
+         url('#{$font-path}nexalightitalic.svg#nexalight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa book';
+    src: url('#{$font-path}nexabook.woff2') format('woff2'),
+         url('#{$font-path}nexabook.woff') format('woff'),
+         url('#{$font-path}nexabook.ttf') format('truetype'),
+         url('#{$font-path}nexabook.svg#nexabook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa book italic';
+    src: url('#{$font-path}nexabookitalic.woff2') format('woff2'),
+         url('#{$font-path}nexabookitalic.woff') format('woff'),
+         url('#{$font-path}nexabookitalic.ttf') format('truetype'),
+         url('#{$font-path}nexabookitalic.svg#nexabook_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa italic';
+    src: url('#{$font-path}nexa-regularitalic.woff2') format('woff2'),
+         url('#{$font-path}nexa-regularitalic.woff') format('woff'),
+         url('#{$font-path}nexa-regularitalic.ttf') format('truetype'),
+         url('#{$font-path}nexa-regularitalic.svg#nexaregular_italic') format('svg');
+    font-weight: italic;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa bold italic';
+    src: url('#{$font-path}nexabolditalic.woff2') format('woff2'),
+         url('#{$font-path}nexabolditalic.woff') format('woff'),
+         url('#{$font-path}nexabolditalic.ttf') format('truetype'),
+         url('#{$font-path}nexabolditalic.svg#nexabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa xbold italic';
+    src: url('#{$font-path}nexaxbolditalic.woff2') format('woff2'),
+         url('#{$font-path}nexaxbolditalic.woff') format('woff'),
+         url('#{$font-path}nexaxbolditalic.ttf') format('truetype'),
+         url('#{$font-path}nexaxbolditalic.svg#nexabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa black italic';
+    src: url('#{$font-path}nexablackitalic.woff2') format('woff2'),
+         url('#{$font-path}nexablackitalic.woff') format('woff'),
+         url('#{$font-path}nexablackitalic.ttf') format('truetype'),
+         url('#{$font-path}nexablackitalic.svg#nexablack_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa heavy';
+    src: url('#{$font-path}nexaheavy.woff2') format('woff2'),
+         url('#{$font-path}nexaheavy.woff') format('woff'),
+         url('#{$font-path}nexaheavy.ttf') format('truetype'),
+         url('#{$font-path}nexaheavy.svg#nexaheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'nexa heavy italic';
+    src: url('#{$font-path}nexaheavyitalic.woff2') format('woff2'),
+         url('#{$font-path}nexaheavyitalic.woff') format('woff'),
+         url('#{$font-path}nexaheavyitalic.ttf') format('truetype'),
+         url('#{$font-path}nexaheavyitalic.svg#nexaheavy_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+	font-family: 'avenir light';
+	src: url('#{$font-path}AvenirLT-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  	font-family: 'avenir heavy';
+  	src: url('#{$font-path}AvenirLT-Heavy.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+
+@font-face {
+    font-family: FrontierCom;
+    src:
+      url('#{$font-path}FrontierCom.ttf?6p7x4l') format('truetype');
+      //url('#{$font-path}FrontierCom.woff?6p7x4l') format('woff'),
+      //url('#{$font-path}/FrontierCom.svg?6p7x4l#FrontierCom') format('svg');
+    font-weight: 400;
+    font-style: normal
+}

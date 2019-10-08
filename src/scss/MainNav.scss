@@ -1,0 +1,106 @@
+.support-nav {
+  border-bottom: 1px solid $gray-line;
+  position: static;
+
+  @media (min-width: $screen-sm) {
+    position: relative;
+    top: -15px;
+  }
+
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+
+    @media (min-width: $screen-sm) {
+     padding-right: 15px;
+     padding-left: 15px;
+    }
+  }
+
+  .nav-tabs {
+    position: relative;
+
+    &.nav-justified {
+      border: none;
+      & > li {
+
+        display: table-cell;
+        width: 1%;
+        float: none;
+
+        &:nth-child(even) {
+          & > a {
+            font-family: $nexa-bold;
+
+            &:hover, &:focus {
+
+              @media (min-width: $screen-sm) {
+               background-color: $teal-2;
+              }
+
+            }
+          }
+        }
+
+        &:nth-child(odd) {
+          & > a {
+            &:hover, &:focus {
+
+              @media (min-width: $screen-sm) {
+               background-color: $teal-2;
+              }
+
+            }
+          }
+        }
+
+        &.active {
+          border: none;
+
+          & > a {
+            border: none;
+            background-color: $navy-brand;
+            color: $white;
+
+          }
+
+          &:nth-child(even) {
+            & > a {
+                background-color: $teal-2;
+            }
+          }
+
+          &:nth-child(odd) {
+            & > a {
+                background-color: $teal-2;
+            }
+          }
+        }
+
+        & > a {
+          border: none;
+          text-decoration: none;
+          border-radius: 0;
+          margin-bottom: 0;
+          padding: 20px;
+
+          &:hover, &:focus {
+            color: $white;
+            background-color:transparent;
+          }
+
+          @media (min-width: $screen-sm) {
+            padding: 30px 15px 15px;
+          }
+
+        }
+      }
+
+
+
+      //&:nth-child(odd) {background-color: $red-brand}
+
+
+    }
+  }
+}

@@ -1,0 +1,116 @@
+[class*=" fci-"],[class^=fci-] {
+    font-family: FrontierCom;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.social-icons-ftr .smi {
+    width: 30px;
+    height: 30px;
+    background-color: #e6e7e8;
+    padding-top: 7.5px;
+    margin-left: 10px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.social-icons-ftr .smi i {
+    font-size: 15.5px;
+    color: #fff
+}
+
+.social-icons-ftr .smi.smi-twitter {
+    background-color: #2ca6df;
+    padding-top: 8.5px
+}
+
+.social-icons-ftr .smi.smi-facebook {
+    background-color: #3b5999;
+    padding-top: 8.5px
+}
+
+.social-icons-ftr .smi.smi-linkedin {
+    background-color: #067cb6
+}
+
+.social-icons-ftr .smi.smi-youtube {
+    background-color: #b31217;
+    padding-top: 6.5px
+}
+
+.social-icons-ftr .smi.smi-youtube i {
+    font-size: 18.5px
+}
+
+.fci-social-facebook:before {
+    content: "\e908"
+}
+
+.fci-social-googleplus:before {
+    content: "\e909"
+}
+
+.fci-social-instagram:before {
+    content: "\e90a"
+}
+
+.fci-social-linkedin:before {
+    content: "\e90b"
+}
+
+.fci-social-pinterest:before {
+    content: "\e90c"
+}
+
+.fci-social-twitter:before {
+    content: "\e90d"
+}
+
+.fci-social-vimeo:before {
+    content: "\e90e"
+}
+
+.fci-social-youtube:before {
+    content: "\e90f"
+}
+
+.fci-clock-arrow:before {
+    content: "\e906"
+}
+
+.fci-exclamation-circle:before {
+    content: "\e907"
+}
+
+.fci-commenting:before {
+    content: "\e904"
+}
+
+.fci-comment:before {
+    content: "\e905"
+}
+
+.fci-call-back:before {
+    content: "\e900"
+}
+
+.fci-chat-bubble:before {
+    content: "\e901"
+}
+
+.fci-minimize:before {
+    content: "\e902"
+}
+
+.fci-minimize-large:before {
+    content: "\e903"
+}

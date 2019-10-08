@@ -1,0 +1,244 @@
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$fa-font-path: "~font-awesome/fonts/";
+
+// $gray-darker:            #28231f;
+// $gray-dark:              #333333;
+// $gray:                   #57585b;
+// $gray-light:             darken(#fafafa, 4%);
+// $gray-lighter:           #969696;
+
+$black:                  #000000;
+$white:                  #FFFFFF;
+
+// brand colors
+$red-brand:              #DF4841;
+$navy-brand:             #17355E;
+$aqua-2-brand:           #74CDDE;
+$marigold-brand:         #FCB832;
+
+// brand digital colors
+$red:                    #D9272D;
+$aqua-1:                 #3bc1cd;
+$teal-2:                 #2b7e93;
+$gray-dark:              #58595B;
+$gray:                   #CCCCCC;
+$gray-light:             #FAFAFA;
+$gray-line:              #d1d3d4;
+$footer-bg:              #222222;
+$footer-link:            #999999;
+
+$teal-1:                 #206c72;
+
+$text-color:            $gray-dark;
+$main-nav:              #b8b8bc;
+
+$link-color:            $teal-2;
+$link-hover-color:      darken($link-color, 15%);
+$link-hover-decoration: none;
+
+$brand-primary:         $red;
+$brand-success:         $teal-2;
+$brand-info:            $gray-dark;
+$brand-warning:         $marigold-brand;
+$brand-danger:          $red-brand;
+
+//fonts
+$nexa-regular: 'nexa', 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+$nexa-bold: 'nexa bold', 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+$nexa-black: 'nexa black', 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+$nexa-italic: 'nexa italic', 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+$avenir: 'avenir light', 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+$avenir-heavy: 'avenir heavy', 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  $nexa-regular;
+$font-family-base:        $font-family-sans-serif;
+
+$font-size-base:          16px;
+$font-size-large:         ceil(($font-size-base * 1.25)); // ~22px
+$font-size-small:         ceil(($font-size-base * .85)); // ~15px
+
+$font-size-h1:            floor(($font-size-base * 2.3)); // ~36px
+$font-size-h2:            floor(($font-size-base * 1.9)); // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.5)); // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.35)); // ~22px
+$font-size-h5:            $font-size-base;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
+
+$headings-font-family:    $nexa-regular;
+$headings-font-weight:    100;
+$headings-line-height:    1.1;
+$headings-color:          inherit;
+
+
+//== Components
+//
+$border-radius-base:        4px;
+$border-radius-large:       6px;
+$border-radius-small:       1px;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-font-weight:                100;
+
+$btn-default-color:              $white;
+$btn-default-bg:                 $brand-info;
+$btn-default-border:             $brand-info;
+
+$btn-primary-color:              $white;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             $brand-primary;
+
+$btn-success-color:              $white;
+$btn-success-bg:                 $brand-success;
+$btn-success-border:             $brand-success;
+
+$btn-info-color:                 $brand-success;
+$btn-info-bg:                    $white;
+$btn-info-border:                $brand-success;
+
+
+$btn-link-disabled-color:        $gray-light !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base:         $border-radius-base;
+$btn-border-radius-large:        $border-radius-large;
+$btn-border-radius-small:        $border-radius-small;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+
+$screen-xs:                  480px;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+
+//$grid-float-breakpoint:    $screen-md-min;
+//** Point at which the navbar begins collapsing.
+//$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+$navbar-height:                    auto;
+$navbar-margin-bottom:             0;
+$navbar-border-radius:             none;
+//$navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
+$navbar-padding-vertical:          15px;
+//$navbar-collapse-max-height:      767px;
+
+$navbar-default-color:             $text-color;
+$navbar-default-bg:                $white;
+$navbar-default-border:            $gray-light;
+
+// Navbar links
+$navbar-default-link-color:                #777 !default;
+$navbar-default-link-hover-color:          #333 !default;
+$navbar-default-link-hover-bg:             transparent !default;
+$navbar-default-link-active-color:         #555 !default;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
+// Navbar brand label
+$navbar-default-brand-color:               $navbar-default-link-color !default;
+$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
+$navbar-default-brand-hover-bg:            transparent !default;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           #ddd !default;
+$navbar-default-toggle-icon-bar-bg:        #888 !default;
+$navbar-default-toggle-border-color:       #ddd !default;
+
+
+//=== Inverted navbar
+// Reset inverted navbar basics
+$navbar-inverse-color:                      lighten($gray-light, 15%) !default;
+$navbar-inverse-bg:                         #222 !default;
+$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
+
+// Inverted navbar links
+$navbar-inverse-link-color:                 lighten($gray-light, 15%) !default;
+$navbar-inverse-link-hover-color:           #fff !default;
+$navbar-inverse-link-hover-bg:              transparent !default;
+$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
+$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%) !default;
+$navbar-inverse-link-disabled-color:        #444 !default;
+$navbar-inverse-link-disabled-bg:           transparent !default;
+
+// Inverted navbar brand label
+$navbar-inverse-brand-color:                $navbar-inverse-link-color !default;
+$navbar-inverse-brand-hover-color:          #fff !default;
+$navbar-inverse-brand-hover-bg:             transparent !default;
+
+// Inverted navbar toggle
+$navbar-inverse-toggle-hover-bg:            inherit;
+$navbar-inverse-toggle-icon-bar-bg:         $white;
+$navbar-inverse-toggle-border-color:        transparent;
+
+
+
+//== Jumbotron
+//
+//##
+
+$jumbotron-padding:              25px;
+$jumbotron-color:                $navy-brand;
+$jumbotron-bg:                   $aqua-2-brand;
+$jumbotron-heading-color:        inherit;
+$jumbotron-font-size:            18px;
+$jumbotron-heading-font-size:    42px;
+
+
+//== Panels
+//
+//##
+
+$panel-bg:                    $white;
+$panel-body-padding:          15px !default;
+$panel-heading-padding:       10px 15px !default;
+$panel-footer-padding:        $panel-heading-padding !default;
+$panel-border-radius:         0;
+
+$panel-default-text:          $gray-dark !default;
+$panel-default-border:        #ddd !default;
+$panel-default-heading-bg:    $white;
+
+
+
+$spacer: 28px;

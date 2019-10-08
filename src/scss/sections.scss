@@ -1,0 +1,120 @@
+//outage - $marigold-brand
+// quick checks - $navy-brand
+// beeping - $red-brand
+// get in touch - $aqua-1
+
+.section {
+  border-bottom: 2px solid $gray-line;
+  padding: 30px 0 50px;
+
+  .panel {
+    position: relative;
+    margin-bottom: 10px;
+
+    .panel-heading {
+      padding: 20px 15px;
+      a {
+        color: $text-color;
+        text-decoration: none;
+        .fa {
+          color: $teal-1;
+        }
+      }
+    }
+
+    .collapser {
+      position: absolute;
+      right: 20px;
+      top: 25px;
+    }
+    h5 {
+      font-family: $nexa-bold;
+      font-size: 20px;
+      margin-bottom: 2px;
+      margin-top: 2px;
+      padding-right: 35px;
+    }
+  }
+
+  &.outage {
+    .panel {
+      @media (min-width: $screen-sm) {
+        border-left: 10px solid  $marigold-brand;
+      }
+    }
+  }
+
+  &.checks {
+    .panel {
+      @media (min-width: $screen-sm) {
+        border-left: 10px solid   $navy-brand;
+      }
+    }
+  }
+
+  &.beeping {
+    .panel {
+      @media (min-width: $screen-sm) {
+        border-left: 10px solid  $red-brand;
+      }
+    }
+  }
+
+  &.touch {
+    background-color: $aqua-2-brand;
+    color: $white;
+    padding: 40px 0;
+    border-bottom: none;
+    h3 {
+      color: $white;
+      margin-bottom: 40px;
+    }
+    .well {
+      background-color: transparent;
+      border-width: 2px;
+      border-radius: 0;
+      box-shadow: none;
+      text-align: center;
+
+      img {
+        display: block;
+        margin: 0 auto 10px;
+        height: 70px;
+        width: auto;
+       }
+
+      a {
+        color: $white;
+        font-family: $nexa-bold;
+        font-size: 18px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.helpful {
+    border-bottom: none;
+    padding: 20px;
+  }
+
+  &.no-collapse {
+    .panel {
+      border: none;
+      box-shadow: none;
+      @media (min-width: $screen-sm) {
+        border: 1px solid #ddd;
+        border-left: 10px solid  $marigold-brand;
+      }
+
+      .panel-body {
+        padding: 0;
+
+        @media (min-width: $screen-sm) {
+          padding: 15px;
+        }
+      }
+
+    }
+  }
+
+}

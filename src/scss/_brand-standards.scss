@@ -1,0 +1,58 @@
+.red {
+  color: $red-brand;
+}
+
+.btn {
+  font-family: $nexa-bold;
+  padding: 10px 30px;
+  border: 2px solid;
+
+  &:hover {
+    background-color: $white;
+    color: $text-color;
+
+    &.btn-success {
+      color: $brand-success;
+    }
+
+    &.btn-primary {
+      color: $brand-primary;
+    }
+
+    &.btn-info {
+      color: $white;
+      background-color: $brand-success;
+      border-color:  $brand-success;
+    }
+
+    &.btn-warning {
+      color: $brand-warning;
+    }
+
+    &.btn-danger {
+      color: $brand-danger;
+    }
+  }
+
+}
+
+.form-control {
+  color: $text-color;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+  h1 {
+    font-family: $nexa-bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  h3 {
+    margin: 0;
+  }
+}
+
+.disclaimer {
+  margin: 0 0 10px;
+  display: inline-block;
+}
