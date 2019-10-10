@@ -19,9 +19,11 @@ class Lightbox extends React.Component {
   render() {
     return (
       <div>
-        <Modal bsSize="large" show={this.props.show} onHide={this.handleClose}>
+        <Modal className="imgModal" bsSize="large" show={this.props.show} onHide={this.handleClose}>
+          <Modal.Header closeButton>
+          </Modal.Header>
           <Modal.Body>
-            <img src={this.props.selectedImage} alt=""/>
+            <img className="expandedImg" src={this.props.selectedImage} alt=""/>
           </Modal.Body>
         </Modal>
       </div>

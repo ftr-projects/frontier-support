@@ -28,29 +28,10 @@
         width: 1%;
         float: none;
 
-        &:nth-child(even) {
-          & > a {
-            font-family: $nexa-bold;
-
-            &:hover, &:focus {
-
-              @media (min-width: $screen-sm) {
-               background-color: $teal-2;
-              }
-
-            }
-          }
-        }
-
-        &:nth-child(odd) {
-          & > a {
-            &:hover, &:focus {
-
-              @media (min-width: $screen-sm) {
-               background-color: $teal-2;
-              }
-
-            }
+        & > a {
+          font-family: $nexa-bold;
+          &:hover, &:focus {
+            background-color: $teal-2 !important;
           }
         }
 
@@ -59,21 +40,8 @@
 
           & > a {
             border: none;
-            background-color: $navy-brand;
+            background-color: $teal-2;
             color: $white;
-
-          }
-
-          &:nth-child(even) {
-            & > a {
-                background-color: $teal-2;
-            }
-          }
-
-          &:nth-child(odd) {
-            & > a {
-                background-color: $teal-2;
-            }
           }
         }
 
@@ -95,11 +63,6 @@
 
         }
       }
-
-
-
-      //&:nth-child(odd) {background-color: $red-brand}
-
 
     }
   }

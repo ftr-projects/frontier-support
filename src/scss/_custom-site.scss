@@ -5,3 +5,29 @@
     font-family: $nexa-bold;
   }
 }
+
+.sec-title-btn {
+  position: relative;
+  &:after {
+    content: "\f054";
+    color: $link-color;
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 11px);
+    @media (min-width: $screen-sm) {
+      content: "";
+    }
+  }
+}
+
+.back-home-btn {
+  padding: 20px 0;
+  color: $link-color;
+  &:before {
+    content: "\f053";
+    font-family: FontAwesome;
+    font-size: 10px;
+    margin-right: 4px;
+  }
+}

@@ -1,0 +1,17 @@
+
+.section {
+  &.checks {
+    border-left: 10px solid $checks;
+
+    @media (min-width: $checks) {
+      border-left: none;
+    }
+
+    .panel {
+      @media (min-width: $screen-sm) {
+        border-left: 10px solid $checks;
+      }
+    }
+
+  }
+}

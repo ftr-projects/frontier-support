@@ -1,0 +1,234 @@
+
+.section {
+  border-bottom: 2px solid $gray-line;
+  padding: 30px 0 50px;
+
+  .panel {
+    position: relative;
+    margin-bottom: 10px;
+
+    .panel-heading {
+      padding: 20px 15px;
+      a {
+        color: $text-color;
+        text-decoration: none;
+        .fa {
+          color: $teal-1;
+        }
+      }
+
+      .fa-plus {
+        &:before {
+          content: "\f068"
+        }
+      }
+
+      & .collapsed {
+        .fa-plus {
+          &:before {
+            content: "\f067"
+          }
+        }
+      }
+    }
+
+    .collapser {
+      position: absolute;
+      right: 20px;
+      top: 25px;
+    }
+    h5 {
+      font-family: $nexa-bold;
+      font-size: 20px;
+      margin-bottom: 2px;
+      margin-top: 2px;
+      padding-right: 35px;
+    }
+  }
+
+  &.outage {
+    border-left: 10px solid  $marigold-brand;
+    padding: 10px 0 15px;
+    @media (min-width: $screen-sm) {
+      border-left: none;
+      padding: 30px 0 50px;
+    }
+
+    .panel {
+      @media (min-width: $screen-sm) {
+        border-left: 10px solid  $marigold-brand;
+      }
+    }
+  }
+
+  &.helpful {
+    background-color: #eee;
+    border-bottom: none;
+    padding: 20px 0 30px;
+    .btn-info {
+      background-color: #eee;
+      &:hover {
+        background-color: $link-color;
+      }
+    }
+  }
+
+  &.no-collapse {
+    .panel {
+      border: none;
+      box-shadow: none;
+      @media (min-width: $screen-sm) {
+        border: 1px solid #ddd;
+        border-left: 10px solid  $marigold-brand;
+      }
+
+      .panel-body {
+        padding: 0;
+
+        @media (min-width: $screen-sm) {
+          padding: 15px;
+        }
+      }
+
+    }
+  }
+
+
+  &.unactive {
+    padding: 0;
+
+    @media (min-width: $screen-sm) {
+      max-height: none;
+      padding: 30px 0 50px;
+    }
+
+    .back-home-btn {
+      display: none;
+    }
+
+    .sec-title-btn {
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 35px 0;
+
+      @media (min-width: $screen-sm) {
+        width: auto;
+        padding: 0;
+        cursor: text;
+      }
+
+      h3 {
+        margin: 0;
+        @media (min-width: $screen-sm) {
+          margin-top: 22px;
+          margin-bottom: 11px;
+        }
+      }
+    }
+
+    .panels {
+      max-height: 0px;
+      overflow: hidden;
+
+      @media (min-width: $screen-sm) {
+        max-height: none;
+        display: block;
+      }
+    }
+  }
+
+  &.active {
+    border-left: none;
+    max-height: none;
+    padding: 0 0 50px;
+
+    @media (min-width: $screen-sm) {
+      border-left: 10px solid $navy-brand;
+      padding: 30px 0 50px;
+    }
+
+    .back-home-btn {
+      display: block;
+
+      @media (min-width: $screen-sm) {
+        display: none;
+      }
+    }
+
+    .sec-title-btn {
+      background: $navy-brand;
+      color: $white;
+      cursor: pointer;
+      margin-right: -15px;
+      margin-left: -15px;
+      margin-bottom: 15px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      padding-left: 20px;
+      text-align: left;
+      width: calc(100% + 30px);
+
+      &:after {
+        content: "";
+      }
+
+      @media (min-width: $screen-sm) {
+        cursor: text;
+        color: $text-color;
+        background-color: transparent;
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-top: 0;
+      }
+
+      .sec-title {
+        color: $white;
+        width: 100%;
+        text-align: left;
+        margin: 0;
+
+        @media (min-width: $screen-sm) {
+          cursor: text;
+          color: $navy-brand;
+          margin-top: 22px;
+          margin-bottom: 11px;
+        }
+      }
+
+    }
+
+  }
+}
+
+$sections: ("checks", "beeping" , "touch");
+
+@each $section in $sections {
+  .support-main {
+    &.#{$section} {
+      & > .section {
+        display: none;
+        @media (min-width: $screen-sm) {
+          display: block;
+        }
+        &.#{$section}, &.helpful {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.support-main {
+  .section {}
+  @media (min-width: $screen-sm) {
+    .section {
+      display: block;
+    }
+  }
+}

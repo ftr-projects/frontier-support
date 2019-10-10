@@ -60,4 +60,76 @@
 .modal-content {
   border-radius: 1px;
   padding: 20px 0;
+
+  .expandedImg {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+  }
+}
+
+.imgModal {
+  .modal-content {
+    padding: 0 0 20px;
+  }
+  .modal-header {
+    padding: 0;
+    border-bottom: none;
+    position: relative;
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      z-index: 200;
+      display: block;
+      font-size: 36px;
+    }
+  }
+}
+
+.thumbnail {
+    border-radius: 0;
+    padding: 20px ;
+    position: relative;
+    min-height: auto;
+
+    @media (min-width: $screen-sm) {
+      min-height: 340px;
+    }
+
+
+
+    a {
+      cursor: pointer;
+      &:after {
+        content: "\f0b2";
+        font-family: FontAwesome;
+        font-size: 16px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: $link-color;
+      }
+    }
+
+    hr {
+      border-top: 1px solid $gray;
+    }
+
+    img {
+      text-align: center;
+      margin: auto;
+      @extend .img-responsive;
+    }
+}
+
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }

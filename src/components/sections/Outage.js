@@ -1,10 +1,7 @@
 import React from 'react';
 import Panel from 'react-bootstrap/lib/Panel';
 
-class Outage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+class Outage extends React.Component {  
 
   state = {
     isOutage: 'Yes - There\'s an outage impacting your area.'

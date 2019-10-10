@@ -1,0 +1,24 @@
+.section {
+  &.beeping {
+    border-left: 10px solid  $beeping;
+
+    @media (min-width:  $beeping) {
+      border-left: none;
+    }
+
+    .panel {
+      @media (min-width: $screen-sm) {
+        border-left: 10px solid  $beeping;
+      }
+    }
+
+    &.active {
+      .sec-title-btn {
+        background-color: $beeping;
+        @media (min-width: $screen-sm) {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
